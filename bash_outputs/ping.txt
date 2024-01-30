@@ -1,0 +1,6 @@
+PING d339229sl9sepr.cloudfront.net (18.65.25.81) 56(84) bytes of data.
+64 bytes from server-18-65-25-81.lax53.r.cloudfront.net (18.65.25.81): icmp_seq=1 ttl=128 time=29.8 ms
+
+--- d339229sl9sepr.cloudfront.net ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 29.820/29.820/29.820/0.000 ms

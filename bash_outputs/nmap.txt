@@ -1,0 +1,44 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-30 17:00 EST
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 17:00
+Completed NSE at 17:00, 0.00s elapsed
+Initiating NSE at 17:00
+Completed NSE at 17:00, 0.00s elapsed
+Initiating NSE at 17:00
+Completed NSE at 17:00, 0.00s elapsed
+Initiating Ping Scan at 17:00
+Scanning 18.65.25.81 [2 ports]
+Completed Ping Scan at 17:00, 0.25s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 17:00
+Completed Parallel DNS resolution of 1 host. at 17:00, 0.25s elapsed
+Initiating Connect Scan at 17:00
+Scanning server-18-65-25-81.lax53.r.cloudfront.net (18.65.25.81) [100 ports]
+Discovered open port 443/tcp on 18.65.25.81
+Completed Connect Scan at 17:00, 24.35s elapsed (100 total ports)
+Initiating Service scan at 17:00
+Scanning 1 service on server-18-65-25-81.lax53.r.cloudfront.net (18.65.25.81)
+Completed Service scan at 17:00, 5.01s elapsed (1 service on 1 host)
+NSE: Script scanning 18.65.25.81.
+Initiating NSE at 17:00
+Completed NSE at 17:01, 31.56s elapsed
+Initiating NSE at 17:01
+Completed NSE at 17:01, 10.10s elapsed
+Initiating NSE at 17:01
+Completed NSE at 17:01, 0.00s elapsed
+Nmap scan report for server-18-65-25-81.lax53.r.cloudfront.net (18.65.25.81)
+Host is up (0.20s latency).
+Not shown: 99 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+443/tcp open  tcpwrapped
+
+NSE: Script Post-scanning.
+Initiating NSE at 17:01
+Completed NSE at 17:01, 0.00s elapsed
+Initiating NSE at 17:01
+Completed NSE at 17:01, 0.00s elapsed
+Initiating NSE at 17:01
+Completed NSE at 17:01, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 71.86 seconds
