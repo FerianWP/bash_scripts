@@ -9,7 +9,7 @@ then
         then
             programName=$(basename "$dir")
             echo "Resolving domains for $programName: "
-            dnsx -dL "${dir}/alldomains.txt" -silent | anew "${dir}/alldomains.txt" | notify -silent -bulk
+            dnsx -l "${dir}/alldomains.txt" -silent | anew "${dir}/resolveddomains.txt" | notify -silent -bulk
         else 
             programName=$(basename "$dir")
             echo "No domains to resolve for $programName!"

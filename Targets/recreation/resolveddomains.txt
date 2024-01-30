@@ -1,0 +1,13 @@
+beta.recreation.gov
+www.recreation.gov
+compass.recreation.gov
+mobile.recreation.gov
+partners.recreation.gov
+recreation.gov
+manage-cdn.recreation.gov
+cdn.beta.recreation.gov
+sso.recreation.gov
+ridb.recreation.gov
+cdn.recreation.gov
+manage.recreation.gov
+payments.recreation.gov
