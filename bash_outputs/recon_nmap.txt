@@ -1,99 +1,73 @@
-Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-01-31 16:18 EST
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-02-07 17:15 EST
 NSE: Loaded 156 scripts for scanning.
 NSE: Script Pre-scanning.
-Initiating NSE at 16:18
-Completed NSE at 16:18, 0.00s elapsed
-Initiating NSE at 16:18
-Completed NSE at 16:18, 0.00s elapsed
-Initiating NSE at 16:18
-Completed NSE at 16:18, 0.00s elapsed
-Initiating Ping Scan at 16:18
-Scanning 10.10.226.185 [2 ports]
-Completed Ping Scan at 16:18, 0.16s elapsed (1 total hosts)
-Initiating Parallel DNS resolution of 1 host. at 16:18
-Completed Parallel DNS resolution of 1 host. at 16:18, 0.00s elapsed
-Initiating Connect Scan at 16:18
-Scanning 10.10.226.185 [100 ports]
-Discovered open port 139/tcp on 10.10.226.185
-Discovered open port 445/tcp on 10.10.226.185
-Discovered open port 8080/tcp on 10.10.226.185
-Discovered open port 80/tcp on 10.10.226.185
-Discovered open port 22/tcp on 10.10.226.185
-Discovered open port 8009/tcp on 10.10.226.185
-Completed Connect Scan at 16:18, 2.40s elapsed (100 total ports)
-Initiating Service scan at 16:18
-Scanning 6 services on 10.10.226.185
-Completed Service scan at 16:19, 11.57s elapsed (6 services on 1 host)
-NSE: Script scanning 10.10.226.185.
-Initiating NSE at 16:19
-Completed NSE at 16:19, 5.95s elapsed
-Initiating NSE at 16:19
-Completed NSE at 16:19, 0.74s elapsed
-Initiating NSE at 16:19
-Completed NSE at 16:19, 0.00s elapsed
-Nmap scan report for 10.10.226.185
-Host is up (0.20s latency).
-Not shown: 94 closed tcp ports (conn-refused)
-PORT     STATE SERVICE     VERSION
-22/tcp   open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.4 (Ubuntu Linux; protocol 2.0)
+Initiating NSE at 17:15
+Completed NSE at 17:15, 0.00s elapsed
+Initiating NSE at 17:15
+Completed NSE at 17:15, 0.00s elapsed
+Initiating NSE at 17:15
+Completed NSE at 17:15, 0.00s elapsed
+Initiating Ping Scan at 17:15
+Scanning 10.10.11.252 [2 ports]
+Completed Ping Scan at 17:15, 0.13s elapsed (1 total hosts)
+Initiating Connect Scan at 17:15
+Scanning bizness.htb (10.10.11.252) [100 ports]
+Discovered open port 80/tcp on 10.10.11.252
+Discovered open port 443/tcp on 10.10.11.252
+Discovered open port 22/tcp on 10.10.11.252
+Completed Connect Scan at 17:15, 1.57s elapsed (100 total ports)
+Initiating Service scan at 17:15
+Scanning 3 services on bizness.htb (10.10.11.252)
+Completed Service scan at 17:16, 12.74s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.11.252.
+Initiating NSE at 17:16
+Completed NSE at 17:16, 7.68s elapsed
+Initiating NSE at 17:16
+Completed NSE at 17:16, 2.32s elapsed
+Initiating NSE at 17:16
+Completed NSE at 17:16, 0.00s elapsed
+Nmap scan report for bizness.htb (10.10.11.252)
+Host is up (0.11s latency).
+Not shown: 97 closed tcp ports (conn-refused)
+PORT    STATE SERVICE  VERSION
+22/tcp  open  ssh      OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
 | ssh-hostkey: 
-|   2048 db:45:cb:be:4a:8b:71:f8:e9:31:42:ae:ff:f8:45:e4 (RSA)
-|   256 09:b9:b9:1c:e0:bf:0e:1c:6f:7f:fe:8e:5f:20:1b:ce (ECDSA)
-|_  256 a5:68:2b:22:5f:98:4a:62:21:3d:a2:e2:c5:a9:f7:c2 (ED25519)
-80/tcp   open  http        Apache httpd 2.4.18 ((Ubuntu))
-|_http-title: Site doesn't have a title (text/html).
-|_http-server-header: Apache/2.4.18 (Ubuntu)
+|   3072 3e:21:d5:dc:2e:61:eb:8f:a6:3b:24:2a:b7:1c:05:d3 (RSA)
+|   256 39:11:42:3f:0c:25:00:08:d7:2f:1b:51:e0:43:9d:85 (ECDSA)
+|_  256 b0:6f:a0:0a:9e:df:b1:7a:49:78:86:b2:35:40:ec:95 (ED25519)
+80/tcp  open  http     nginx 1.18.0
+|_http-server-header: nginx/1.18.0
 | http-methods: 
 |_  Supported Methods: GET HEAD POST OPTIONS
-139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
-445/tcp  open  netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
-8009/tcp open  ajp13       Apache Jserv (Protocol v1.3)
-| ajp-methods: 
-|_  Supported methods: GET HEAD POST OPTIONS
-8080/tcp open  http        Apache Tomcat 9.0.7
-|_http-favicon: Apache Tomcat
-|_http-title: Apache Tomcat/9.0.7
+|_http-title: Did not follow redirect to https://bizness.htb/
+443/tcp open  ssl/http nginx 1.18.0
 | http-methods: 
-|_  Supported Methods: GET HEAD POST OPTIONS
-Service Info: Host: BASIC2; OS: Linux; CPE: cpe:/o:linux:linux_kernel
-
-Host script results:
-| smb2-time: 
-|   date: 2024-01-31T21:18:59
-|_  start_date: N/A
-| smb-security-mode: 
-|   account_used: guest
-|   authentication_level: user
-|   challenge_response: supported
-|_  message_signing: disabled (dangerous, but default)
-| smb-os-discovery: 
-|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
-|   Computer name: basic2
-|   NetBIOS computer name: BASIC2\x00
-|   Domain name: \x00
-|   FQDN: basic2
-|_  System time: 2024-01-31T16:18:59-05:00
-| smb2-security-mode: 
-|   3:1:1: 
-|_    Message signing enabled but not required
-| nbstat: NetBIOS name: BASIC2, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
-| Names:
-|   BASIC2<00>           Flags: <unique><active>
-|   BASIC2<03>           Flags: <unique><active>
-|   BASIC2<20>           Flags: <unique><active>
-|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
-|   WORKGROUP<00>        Flags: <group><active>
-|   WORKGROUP<1d>        Flags: <unique><active>
-|_  WORKGROUP<1e>        Flags: <group><active>
-|_clock-skew: mean: 1h39m57s, deviation: 2h53m12s, median: -3s
+|_  Supported Methods: OPTIONS GET HEAD POST
+| tls-alpn: 
+|_  http/1.1
+| ssl-cert: Subject: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=Some-State/countryName=UK
+| Issuer: organizationName=Internet Widgits Pty Ltd/stateOrProvinceName=Some-State/countryName=UK
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-12-14T20:03:40
+| Not valid after:  2328-11-10T20:03:40
+| MD5:   b182:2fdb:92b0:2036:6b98:8850:b66e:da27
+|_SHA-1: 8138:8595:4343:f40f:937b:cc82:23af:9052:3f5d:eb50
+|_http-server-header: nginx/1.18.0
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|_  http/1.1
+|_http-title: BizNess Incorporated
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 NSE: Script Post-scanning.
-Initiating NSE at 16:19
-Completed NSE at 16:19, 0.00s elapsed
-Initiating NSE at 16:19
-Completed NSE at 16:19, 0.00s elapsed
-Initiating NSE at 16:19
-Completed NSE at 16:19, 0.00s elapsed
+Initiating NSE at 17:16
+Completed NSE at 17:16, 0.00s elapsed
+Initiating NSE at 17:16
+Completed NSE at 17:16, 0.00s elapsed
+Initiating NSE at 17:16
+Completed NSE at 17:16, 0.00s elapsed
 Read data files from: /usr/bin/../share/nmap
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 21.03 seconds
+Nmap done: 1 IP address (1 host up) scanned in 24.65 seconds

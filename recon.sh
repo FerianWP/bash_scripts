@@ -21,4 +21,4 @@ else
 fi
 
 nmap -A -F "$ip" -v > ~/Desktop/bash_scripts/bash_outputs/recon_nmap.txt
-gobuster dir -u http://"$dns" -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt > ~/Desktop/bash_scripts/bash_outputs/recon_dir.txt
+gobuster dir -u http://"$dns" -b 301 -w /usr/share/wordlists/seclists/Discovery/Web-Content/common.txt > ~/Desktop/bash_scripts/bash_outputs/recon_dir.txt
