@@ -29,3 +29,4 @@ email.assetinventory.bugcrowd.com
 email.forum.bugcrowd.com
 ww2.bugcrowd.com
 email.crowdcontrol.bugcrowd.com
+ww3.bugcrowd.com

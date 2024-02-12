@@ -43,3 +43,4 @@ email.bugcrowd.com
 assetinventory.bugcrowd.com
 email.submit.bugcrowd.com
 www.pages.bugcrowd.com
+ww3.bugcrowd.com
